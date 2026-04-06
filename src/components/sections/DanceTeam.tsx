@@ -60,7 +60,7 @@ const DanceTeam = () => {
 			ref={sectionRef}
 			className="py-20 lg:py-48 bg-ink overflow-hidden border-b border-white/5 relative"
 		>
-			<div className="container-custom">
+			<div className="container">
 				<div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
 					{/* Left: Text Content */}
 					<div className="lg:w-1/2 z-10">

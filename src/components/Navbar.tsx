@@ -72,7 +72,7 @@ const Navbar = () => {
 						"bg-white border-b border-gold-light/20 py-4 shadow-sm",
 				)}
 			>
-				<div className="container-custom flex items-center justify-between">
+				<div className="container flex items-center justify-between">
 					{/* Logo */}
 					<div className="z-[130]">
 						<a
@@ -164,7 +164,7 @@ const Navbar = () => {
 				style={{ clipPath: "inset(0% 0% 100% 0%)" }}
 				data-open={isMenuOpen}
 			>
-				<div className="container-custom h-full flex flex-col justify-center gap-12 pt-20">
+				<div className="container h-full flex flex-col justify-center gap-12 pt-20">
 					<div
 						ref={linksRef}
 						className="flex flex-col gap-6"

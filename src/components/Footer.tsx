@@ -6,7 +6,7 @@ import SectionLabel from "./ui/SectionLabel";
 const Footer = () => {
 	return (
 		<footer className="py-12 bg-ink border-t border-white/5">
-			<div className="container-custom">
+			<div className="container">
 				<div className="flex flex-col lg:flex-row justify-between items-center gap-12 text-stone text-[11px] uppercase tracking-widest font-medium">
 					{/* Logo Left */}
 					<div className="text-xl font-display italic text-white/50 lowercase tracking-tighter">

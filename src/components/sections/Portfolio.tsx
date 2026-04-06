@@ -66,7 +66,7 @@ const Portfolio = () => {
 			ref={sectionRef}
 			className="py-20 lg:py-48 bg-white overflow-hidden"
 		>
-			<div className="container-custom">
+			<div className="container">
 				<div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 lg:mb-20 gap-8">
 					<div className="max-w-xl">
 						<SectionLabel>Dự án tiêu biểu</SectionLabel>
@@ -112,17 +112,19 @@ const Portfolio = () => {
 							<div
 								key={item.id}
 								className={cn(
-									"portfolio-item group relative overflow-hidden bg-cream cursor-pointer",
+									"portfolio-item group relative overflow-hidden bg-cream cursor-pointer w-full h-full",
 									isLarge
 										? "lg:col-span-2 aspect-[4/3] lg:aspect-[16/9]"
-										: "aspect-[4/5] lg:aspect-[3/4]",
-									isMedium && "aspect-[4/3] lg:col-span-1",
+										: isMedium
+											? "aspect-[1/1] lg:aspect-[3/4]"
+											: "aspect-[4/5] lg:aspect-[3/4]",
 								)}
 							>
 								<Image
 									src={item.image}
 									alt={item.title}
 									fill
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 									className="object-cover grayscale lg:group-hover:grayscale-0 lg:group-hover:scale-105 transition-all duration-1000 ease-out"
 								/>
 

@@ -36,7 +36,7 @@ const Services = () => {
 			ref={sectionRef}
 			className="py-20 lg:py-48 bg-white overflow-hidden"
 		>
-			<div className="container-custom">
+			<div className="container">
 				<div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
 					{/* Left: Sticky Headline */}
 					<div className="lg:w-1/3 lg:sticky lg:top-32 h-fit">

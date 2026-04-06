@@ -11,7 +11,7 @@ const Clients = () => {
 			id="clients"
 			className="py-24 lg:py-48 bg-white overflow-hidden"
 		>
-			<div className="container-custom">
+			<div className="container">
 				<div className="flex flex-col lg:flex-row items-end justify-between mb-16 gap-8">
 					<div className="lg:w-1/2">
 						<SectionLabel>Đối tác & Khách hàng</SectionLabel>

@@ -25,10 +25,6 @@
 }
 
 @layer components {
-  .container-custom {
-    @apply max-w-[1320px] mx-auto px-6 lg:px-10 xl:px-16;
-  }
-
   .text-reveal {
     overflow: hidden;
     display: inline-block;

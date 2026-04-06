@@ -56,7 +56,7 @@ const Stats = () => {
 			ref={sectionRef}
 			className="bg-ink py-16 lg:py-32 overflow-hidden border-b border-white/5"
 		>
-			<div className="container-custom">
+			<div className="container">
 				<div
 					ref={triggerRef}
 					className="grid grid-cols-2 lg:grid-cols-4"

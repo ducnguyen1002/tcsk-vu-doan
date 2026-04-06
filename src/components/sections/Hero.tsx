@@ -110,8 +110,8 @@ const Hero = () => {
 				<div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
 			</div>
 
-			<div className="container-custom relative z-10 text-white pt-20">
-				<div className="max-w-4xl">
+			<div className="container relative z-10 text-white pt-20">
+				<div className="max-w-7xl">
 					{/* Badge */}
 					<div
 						ref={badgeRef}
@@ -124,7 +124,7 @@ const Hero = () => {
 
 					{/* Headline */}
 					<div className="mb-8 lg:mb-12">
-						<h1 className="text-[clamp(44px,12vw,110px)] leading-[1.1] lg:leading-[1.05] font-display font-semibold flex flex-col tracking-tight">
+						<h1 className="text-[clamp(32px,10vw,80px)] leading-[1.1] lg:leading-[1.05] font-display font-semibold flex flex-col tracking-tight">
 							<div className="overflow-hidden">
 								<span
 									ref={h1Line1Ref}

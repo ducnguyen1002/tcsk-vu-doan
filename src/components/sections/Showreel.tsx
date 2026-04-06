@@ -23,7 +23,7 @@ const Showreel = () => {
 			id="showreel"
 			className="py-20 lg:py-48 bg-cream overflow-hidden"
 		>
-			<div className="container-custom">
+			<div className="container">
 				<div className="text-center mb-10 lg:mb-16">
 					<SectionLabel className="justify-center">Showreel</SectionLabel>
 					<h2 className="text-4xl lg:text-7xl font-display font-semibold leading-tight tracking-tight">
