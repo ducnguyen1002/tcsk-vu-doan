@@ -25,8 +25,8 @@ const Showreel = () => {
 		>
 			<div className="container">
 				<div className="text-center mb-10 lg:mb-16">
-					<SectionLabel className="justify-center">Showreel</SectionLabel>
-					<h2 className="text-4xl lg:text-7xl font-display font-semibold leading-tight tracking-tight">
+					<SectionLabel className="justify-center">Highlight</SectionLabel>
+					<h2 className="text-3xl lg:text-6xl font-display font-semibold leading-tight tracking-tight">
 						Nghệ thuật trình diễn <br />{" "}
 						<span className="text-gold italic font-light">đỉnh cao</span>
 					</h2>

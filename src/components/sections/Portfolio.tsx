@@ -38,6 +38,41 @@ const Portfolio = () => {
 					},
 				},
 			);
+			// Enhanced Parallax effect for items
+			gsap.utils.toArray<HTMLElement>(".portfolio-item").forEach((el, i) => {
+				const img = el.querySelector("img");
+
+				// 1. Move the whole item container slightly at different speeds (Staggered Column effect)
+				const itemSpeed = i % 2 === 0 ? -20 : 20;
+				gsap.to(el, {
+					y: itemSpeed,
+					ease: "none",
+					scrollTrigger: {
+						trigger: el,
+						start: "top bottom",
+						end: "bottom top",
+						scrub: true,
+					},
+				});
+
+				// 2. Parallax move for the image inside
+				if (img) {
+					gsap.fromTo(
+						img,
+						{ yPercent: -10 },
+						{
+							yPercent: 10,
+							ease: "none",
+							scrollTrigger: {
+								trigger: el,
+								start: "top bottom",
+								end: "bottom top",
+								scrub: true,
+							},
+						},
+					);
+				}
+			});
 		}, sectionRef);
 
 		return () => ctx.revert();
@@ -70,7 +105,7 @@ const Portfolio = () => {
 				<div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 lg:mb-20 gap-8">
 					<div className="max-w-xl">
 						<SectionLabel>Dự án tiêu biểu</SectionLabel>
-						<h2 className="text-4xl lg:text-7xl font-display font-semibold leading-tight tracking-tight">
+						<h2 className="text-3xl lg:text-6xl font-display font-semibold leading-tight tracking-tight">
 							Khoảnh khắc <br />{" "}
 							<span className="text-gold italic font-light">vô giá</span>
 						</h2>
@@ -125,7 +160,7 @@ const Portfolio = () => {
 									alt={item.title}
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-									className="object-cover grayscale lg:group-hover:grayscale-0 lg:group-hover:scale-105 transition-all duration-1000 ease-out"
+									className="object-cover scale-[1.2] grayscale lg:group-hover:grayscale-0 lg:group-hover:scale-[1.25] transition-all duration-1000 ease-out"
 								/>
 
 								{/* Overlay */}

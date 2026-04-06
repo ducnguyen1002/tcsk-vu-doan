@@ -7,7 +7,7 @@ import Button from "./ui/Button";
 
 const navLinks = [
 	{ name: "Dịch vụ", href: "#services" },
-	{ name: "Showreel", href: "#showreel" },
+	{ name: "Hình ảnh nổi bật", href: "#showreel" },
 	{ name: "Dự án", href: "#portfolio" },
 	{ name: "Vũ đoàn", href: "#dance-team" },
 	{ name: "Khách hàng", href: "#clients" },

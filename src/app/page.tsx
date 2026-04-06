@@ -16,11 +16,14 @@ import Testimonials from "@/components/sections/Testimonials";
 import Clients from "@/components/sections/Clients";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/Footer";
+import Preloader from "@/components/ui/Preloader";
 
 export default function Home() {
   useEffect(() => {
     // Universal Scroll Reveal
     const ctx = gsap.context(() => {
+	  // Delay entrance animations slightly to wait for preloader
+      const delay = 1.8; 
       // Heading Reveal Animation
       gsap.utils.toArray<HTMLElement>('.heading-reveal').forEach((el) => {
         gsap.fromTo(el,
@@ -59,6 +62,13 @@ export default function Home() {
       // Initial ScrollTrigger Refresh
       ScrollTrigger.refresh();
       
+      // Temporarily lock scroll for preloader duration
+      document.body.style.overflow = 'hidden';
+      const timer = setTimeout(() => {
+        document.body.style.overflow = 'auto';
+      }, 3500); // Wait for preloader to finish its 3.2s animation
+
+      return () => clearTimeout(timer);
     });
 
     return () => ctx.revert();
@@ -66,6 +76,7 @@ export default function Home() {
 
   return (
     <main className="relative bg-white selection:bg-gold selection:text-white">
+      <Preloader />
       <Navbar />
       
       <Hero />

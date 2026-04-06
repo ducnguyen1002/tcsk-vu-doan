@@ -41,13 +41,13 @@ const Clients = () => {
 							{CLIENTS.map((client) => (
 								<div
 									key={client.name + i}
-									className="flex flex-col items-center gap-1 opacity-40 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-700 cursor-pointer"
+									className="flex flex-col items-center gap-1 opacity-80 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-700 cursor-pointer"
 								>
 									<span className="text-2xl font-display italic font-semibold text-ink/80 tracking-tighter">
 										{client.name}
 									</span>
 									<span className="text-[10px] uppercase tracking-[0.3em] font-medium text-gold/60">
-										Partner —
+										Khách hàng —
 									</span>
 								</div>
 							))}
@@ -68,7 +68,7 @@ const Clients = () => {
 							className="flex shrink-0 items-center"
 						>
 							<span className="text-8xl lg:text-[180px] font-display font-black italic text-ink/10 select-none px-12 leading-none uppercase tracking-tighter">
-								LUXURY — ELEGANCE — ARTISTRY — PASSION — CREATIVITY —
+								SANG TRỌNG — ĐẲNG CẤP — TIN CẬY — CHUYÊN NGHIỆP — SÁNG TẠO —
 							</span>
 						</div>
 					))}

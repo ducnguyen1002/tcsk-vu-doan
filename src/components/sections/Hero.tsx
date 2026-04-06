@@ -15,10 +15,23 @@ const Hero = () => {
 	const bodyRef = useRef<HTMLParagraphElement>(null);
 	const ctaRef = useRef<HTMLDivElement>(null);
 	const scrollRef = useRef<HTMLDivElement>(null);
+	const heroBgRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const ctx = gsap.context(() => {
-			const tl = gsap.timeline({ delay: 0.5 });
+			// Parallax Effect for Background
+			gsap.to(heroBgRef.current, {
+				yPercent: 20,
+				ease: "none",
+				scrollTrigger: {
+					trigger: heroRef.current,
+					start: "top top",
+					end: "bottom top",
+					scrub: true,
+				},
+			});
+
+			const tl = gsap.timeline({ delay: 1.2 }); // Increased delay to account for preloader
 
 			tl.from(badgeRef.current, {
 				y: 20,
@@ -99,13 +112,13 @@ const Hero = () => {
 			className="relative h-[100svh] min-h-[600px] w-full overflow-hidden flex items-center"
 		>
 			{/* Background Image */}
-			<div className="absolute inset-0 z-0">
+			<div ref={heroBgRef} className="absolute inset-0 z-0">
 				<Image
 					src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=1920"
 					alt="Hero Background"
 					fill
 					priority
-					className="object-cover scale-105"
+					className="object-cover scale-[1.2]"
 				/>
 				<div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
 			</div>

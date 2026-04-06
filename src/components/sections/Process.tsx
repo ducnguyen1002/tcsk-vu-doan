@@ -67,7 +67,7 @@ const Process = () => {
 			<div className="container">
 				<div className="max-w-3xl mb-16 lg:mb-24">
 					<SectionLabel>Quy trình triển khai</SectionLabel>
-					<h2 className="text-4xl lg:text-7xl font-display font-semibold leading-tight tracking-tight">
+					<h2 className="text-3xl lg:text-6xl font-display font-semibold leading-tight tracking-tight">
 						Kiến tạo sự kiện <br />{" "}
 						<span className="text-gold italic font-light">theo chuẩn mực</span>
 					</h2>
