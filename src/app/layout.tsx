@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Noto_Serif, Noto_Sans } from "next/font/google";
+import { Space_Grotesk, Noto_Sans } from "next/font/google";
 import "./globals.css";
 
-const notoSerif = Noto_Serif({
-  subsets: ["vietnamese", "latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-display",
   display: "swap",
 });
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className={`${notoSerif.variable} ${notoSans.variable} scroll-smooth`}>
+    <html lang="vi" className={`${spaceGrotesk.variable} ${notoSans.variable} scroll-smooth`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>

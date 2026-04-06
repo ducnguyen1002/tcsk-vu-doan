@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['var(--font-display)', 'serif'],        // Noto Serif
-        body: ['var(--font-body)', 'sans-serif'],         // Noto Sans
+        display: ['var(--font-display)', 'sans-serif'],   // Space Grotesk
+        body: ['var(--font-body)', 'sans-serif'],        // Noto Sans
       },
       colors: {
         'ink': '#0D0D0D',

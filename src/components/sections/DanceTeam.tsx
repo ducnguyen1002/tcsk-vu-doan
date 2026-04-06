@@ -115,7 +115,7 @@ const DanceTeam = () => {
 							className="absolute bottom-[-30px] lg:bottom-[-50px] left-0 w-[50%] lg:w-[55%] h-[50%] lg:h-[55%] border-4 lg:border-8 border-ink overflow-hidden z-20 shadow-2xl group transition-all duration-700"
 						>
 							<Image
-								src="https://images.unsplash.com/photo-1547153760-18fc8604eeac?auto=format&fit=crop&q=80&w=600"
+								src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad"
 								alt="Dance performance close up"
 								fill
 								className="object-cover group-hover:scale-110 transition-transform duration-1000"
